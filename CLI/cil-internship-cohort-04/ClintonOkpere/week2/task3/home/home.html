@@ -1,0 +1,408 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>Document</title>
+</head>
+<style>
+    nav{
+            background-color: aliceblue;
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            padding: 10px 0px;
+            justify-content: space-between;
+            align-items: center;
+            color: gray;
+            top: 0;
+        }
+        nav img{
+            margin-left:50px ;
+            width: 40px;
+            height: 40px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav button {
+            margin-right:50px ;
+            padding: 15px  20px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+        }
+        footer{    
+        background-color: rgb(47,37,68);
+        color: white;
+
+        }
+        .fot-top{
+            text-align: center;
+            padding: 50px 0px;
+            color: white;
+            font-size: 25px;
+        }
+        footer button{
+            padding: 15px  20px;
+            border: none;
+            background-color: white;
+            border-radius: 25px;
+            margin: 20px 0px;
+        }
+        footer ul {
+            list-style: none;
+            line-height: 2;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 120px;
+        }
+        .top img {
+            width:1000px;
+        }
+        .top h2 {
+            font-size: 50px;
+        }
+        .top p{
+            font-size: 25px;
+        }
+        .second {
+            text-align: center;
+            padding: 50px 0px;
+        }
+        .second h2{
+            font-size: 40px;
+            font-weight: 20;
+        }
+        .second-low{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .second-low h1{
+            font-size: 50px;
+            font-weight: 900;
+        }
+        .thrid{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding:50px 0px;
+        }
+        .thrid h1{
+            font-size: 50px;
+            margin: 0;
+        }
+        .thrid img {
+            width:800px;
+            height:700px;
+        }
+        .thrid ul {
+           list-style: none;
+           line-height: 2;
+           margin: 0;
+            padding: 0;
+        }
+        .thrid ul li {
+            font-size: 25px;
+            
+        }
+        .thrid .wods{
+            font-size: 20px;
+        }
+        .foth{
+            display: flex;
+            padding: 50px;
+            justify-content: center;
+            gap: 150px;
+        }
+        .foth img {
+            width:800px;
+            height:700px;
+        }
+        .foth-wods{
+            padding:50px 0px;
+        }
+        .foth-wods h1 {
+            font-size: 40px;
+
+        }
+        .foth-wods p{
+            font-size: 20px;
+        }
+        
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 500px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info a {
+  color: white;
+}
+ .slider img{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+.sli{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+ }
+</style>
+<body>
+    <main>
+        <nav>
+            <div>
+            <img src="./images/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt="">
+            <span>max</span>
+            </div>
+            
+            <ul>
+                <li><a href="../about/about.html"> About us</a></li>
+                <li>Products</li>
+                <li>Impact</li>
+                <li>Careers</li>
+                <li><a href="../contact/contact.html">Contact us</a></li>
+            </ul>
+            <button>Become a Max Rider</button>
+        </nav>
+        <section class="sli">
+            <div class="slider">
+  
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+              
+                <div class="slides">
+                  <div id="slide-1">
+                    1
+                  </div>
+                  <div id="slide-2">
+                    2
+                  </div>
+                  <div id="slide-3">
+                    3
+                  </div>
+                  <div id="slide-4">
+                    4
+                  </div>
+                  <div id="slide-5">
+                    5
+                  </div>
+                </div>
+              </div
+        </section>
+        
+        <section class="top" >
+            <div>
+                <h2>We are MAX.
+                    <br>
+                    We are bringing the future of
+                    <br>
+                    mobility to Africa today.
+                </h2>
+                <p>the picture for us is a seamless transportation <br>
+                experience for Africans powered by innovation,<br>
+            technology, and eco friendly infrastructure.</p>
+            <p>We are deliverning a transfromation experinece to 
+                <br> drivers and commuters via a powerful platfrom that is <br>
+                 driving sustainable growth and development across Africa .</p>
+                <p> <u>learn more ></u> </p>
+                </div>
+                <div>
+                    <img src="./images/people-business-meeting-high-angle.webp" alt="">
+                </div>
+
+        </section>
+        <section class="second">
+            <h2>We grow because we care.</h1>
+            <div class="second-low">
+                <div >
+                <h1>9M+</h1>
+                <p>Trips</p>
+                </div>
+                    <div>
+                        <h1>5+</h1>
+                        <p>Opening cities</p>
+                    </div>
+                        <div>
+                            <h1>13K+</h1>
+                            <p>Champions</p>
+                        </div>
+                </div>
+        </section>
+        <section class="thrid">
+            <div>
+                <img src="./images/people-business-meeting-high-angle.webp" alt="">
+            </div>
+            <div class="thrid-aside">
+                <h1>are you an experience <br>
+                driver? do you wnat to</h1>
+                <ul>
+                    <li></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span></span> Pick up more passengers thath ever?</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span></span>connect with enterprises for delivery services?</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span></span>save the plant by transitioning to electric <br>vehicles </li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span></span>Earn more money on your terms</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span></span>Enjoy great health and vehicle insurance plans?</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span>Get free access to necessarydriver skill <br> development and training?</span></li>
+                </ul>
+                <p class="wods">then you're in the right place. at max,we price ourselves on 
+                    <br>our vision to empower transport operations across Africa to 
+                    <br>grow financially, get connect to profitable services, make <br>
+                    more money,and be safe on the job.
+                </p>
+                <b>Learn about our Drivers Services platfrom > </b>
+            </div>
+        </section>
+        <section class="foth">
+            <div>
+                <img src="./images/people-business-meeting-high-angle.webp" alt="">
+            </div>
+            <div class="foth-wods">
+                <h1>Pioneering Electric Vehicles <br>
+                (EVs) in Africa.</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                         Nisi sint culpa repellendus! Consequuntur praesentium debi<br>
+                         rerum minima sit tenetur tempora impedit.
+                        <br>
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Nisi sint culpa repellendus! Consequuntur praesentium debi<br>
+                        rerum minima sit tenetur tempora impedit.</p>
+                        <b><u>load more ></u></b>
+
+            </div>
+        </section>
+            
+    </main>
+    <footer>
+        <div class="fot-top">
+            <h1>The world of vehicles at the feet of a     
+            <br> MAX champion</h1>
+            <button>Become a Max champion</button>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><b>Company</b></li>
+                <li>About Metro Africa Xpress</li>
+                <li>impact</li>
+                <li>press & Media </li>
+                <li>Careers</li>
+            </ul>
+            <ul>
+                <li><b>Company</b></li>
+                <li>About Metro Africa Xpress</li>
+                <li>impact</li>
+                <li>press & Media </li>
+                <li>Careers</li>
+            </ul>
+            <ul>
+                <li><b>Company</b></li>
+                <li>About Metro Africa Xpress</li>
+                <li>impact</li>
+                <li>press & Media </li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
